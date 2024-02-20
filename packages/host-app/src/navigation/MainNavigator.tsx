@@ -11,10 +11,11 @@ import MiniAppScreen from '../screens/MiniAppScreen';
 import BookingAppScreen from '../screens/BookingScreen';
 
 export type MainStackParamList = {
+  Tabs: undefined;
   Home: undefined;
   Detail: undefined;
   MiniApp: undefined;
-  BookingApp: undefined;
+  Booking: undefined;
 };
 
 export type MainStackNavigationProp =
@@ -32,10 +33,11 @@ const MainNavigator = () => {
         headerTitleStyle: styles.headerTitle,
         headerTintColor: 'rgba(255,255,255,1)',
       }}>
+      <Main.Screen name="Tabs" component={HomeScreen} />
+      <Main.Screen name="Booking" component={BookingAppScreen} />
+      <Main.Screen name="MiniApp" component={MiniAppScreen} />
       <Main.Screen name="Home" component={HomeScreen} />
       <Main.Screen name="Detail" component={DetailScreen} />
-      <Main.Screen name="MiniApp" component={MiniAppScreen} />
-      <Main.Screen name="BookingApp" component={BookingAppScreen} />
     </Main.Navigator>
   );
 };

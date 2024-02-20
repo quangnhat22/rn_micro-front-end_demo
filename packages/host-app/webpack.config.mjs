@@ -255,6 +255,21 @@ export default env => {
             eager: true,
             requiredVersion: '6.9.12',
           },
+          '@react-navigation/material-bottom-tabs': {
+            singleton: true,
+            eager: true,
+            requiredVersion: '6.2.20',
+          },
+          'react-native-paper': {
+            singleton: true,
+            eager: true,
+            requiredVersion: '5.12.3',
+          },
+          'react-native-vector-icons': {
+            singleton: true,
+            eager: true,
+            requiredVersion: '10.0.3',
+          },
           'react-native-safe-area-context': {
             singleton: true,
             eager: true,

@@ -244,6 +244,7 @@ export default env => {
         name: 'BookingApp',
         exposes: {
           './BookingAppNavigator': './src/navigation/MainNavigator',
+          './UpcomingScreen': './src/screens/UpcomingScreen',
         },
         shared: {
           react: {
