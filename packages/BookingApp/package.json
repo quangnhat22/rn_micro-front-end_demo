@@ -2,7 +2,12 @@
   "name": "BookingApp",
   "version": "0.0.1",
   "private": true,
+  "installConfig": {
+    "hoistingLimits": "workspaces"
+  },
   "scripts": {
+    "bootstrap": "yarn && yarn bootstrap:pods",
+    "bootstrap:pods": "bundle install && cd ios && bundle exec pod install",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "lint": "eslint .",
