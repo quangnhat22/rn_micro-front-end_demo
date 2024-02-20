@@ -23,6 +23,13 @@ const HomeScreen = () => {
           navigation.navigate('MiniApp');
         }}
       />
+      <Button
+        color="rgba(127, 103, 190, 1)"
+        title="Navigate to BookingApp"
+        onPress={() => {
+          navigation.navigate('BookingApp');
+        }}
+      />
     </View>
   );
 };
