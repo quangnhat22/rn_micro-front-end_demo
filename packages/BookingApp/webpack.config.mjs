@@ -291,6 +291,11 @@ export default env => {
             eager: STANDALONE,
             requiredVersion: '3.20.0',
           },
+          'react-native-calendars': {
+            singleton: true,
+            eager: STANDALONE,
+            requiredVersion: '1.1303.0',
+          },
         },
       }),
       new Repack.plugins.ChunksToHermesBytecodePlugin({

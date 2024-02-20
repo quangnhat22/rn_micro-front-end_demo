@@ -1,8 +1,24 @@
 import {View, StyleSheet, ScrollView, Alert, FlatList} from 'react-native';
 import React from 'react';
-import {Avatar, Button, Card, Divider, Text} from 'react-native-paper';
+import {
+  Avatar,
+  Button,
+  Card,
+  Divider,
+  MaterialBottomTabScreenProps,
+  Text,
+} from 'react-native-paper';
 import recentBookings from '../data/recentBooking.json';
 import upcomingBookings from '../data/upcomingBooking.json';
+import {CompositeScreenProps} from '@react-navigation/native';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import {HomeStackParamList} from '../navigation/HomeNavigator';
+import {TabsParamList} from '../navigation/TabsNavigator';
+
+type Props = CompositeScreenProps<
+  NativeStackScreenProps<HomeStackParamList>,
+  MaterialBottomTabScreenProps<TabsParamList, 'HomeNavigator'>
+>;
 
 const renderAppointment = ({item}: any) => (
   <Card mode="contained">
@@ -26,7 +42,7 @@ const renderAppointment = ({item}: any) => (
 
 const renderDivider = () => <Divider style={styles.divider} />;
 
-const HomeScreen = () => {
+const HomeScreen = ({navigation}: Props) => {
   return (
     <ScrollView style={styles.container}>
       <View style={styles.header}>
@@ -51,7 +67,9 @@ const HomeScreen = () => {
         <Text variant="titleLarge" style={styles.headerTitle}>
           Upcoming Appointments
         </Text>
-        <Button mode="contained-tonal" onPress={() => {}}>
+        <Button
+          mode="contained-tonal"
+          onPress={() => navigation.navigate('Upcoming')}>
           See All
         </Button>
       </View>
