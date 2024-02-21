@@ -1,6 +1,7 @@
 PODS:
   - boost (1.76.0)
-  - callstack-repack (3.7.0):
+  - callstack-repack (3.6.0):
+    - GzipSwift
     - JWTDecode (~> 3.0.0)
     - React-Core
     - SwiftyRSA (~> 1.7)
@@ -74,6 +75,7 @@ PODS:
     - FlipperKit/FlipperKitNetworkPlugin
   - fmt (6.2.1)
   - glog (0.3.5)
+  - GzipSwift (5.1.1)
   - hermes-engine (0.72.3):
     - hermes-engine/Pre-built (= 0.72.3)
   - hermes-engine/Pre-built (0.72.3)
@@ -583,6 +585,7 @@ SPEC REPOS:
     - Flipper-PeerTalk
     - FlipperKit
     - fmt
+    - GzipSwift
     - JWTDecode
     - libevent
     - OpenSSL-Universal
@@ -679,7 +682,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   boost: 57d2868c099736d80fcd648bf211b4431e51a558
-  callstack-repack: bbcb691e5e6a19845295770a1178bdf54b1be018
+  callstack-repack: 9145b930f93b351f698796b5f3385b577671224d
   CocoaAsyncSocket: 065fd1e645c7abab64f7a6a2007a48038fdc6a99
   DoubleConversion: 5189b271737e1565bdce30deb4a08d647e3f5f54
   FBLazyVector: 4cce221dd782d3ff7c4172167bba09d58af67ccb
@@ -694,6 +697,7 @@ SPEC CHECKSUMS:
   FlipperKit: 2efad7007d6745a3f95e4034d547be637f89d3f6
   fmt: ff9d55029c625d3757ed641535fd4a75fedc7ce9
   glog: 04b94705f318337d7ead9e6d17c019bd9b1f6b1b
+  GzipSwift: 893f3e48e597a1a4f62fafcb6514220fcf8287fa
   hermes-engine: 10fbd3f62405c41ea07e71973ea61e1878d07322
   JWTDecode: 2eed97c2fa46ccaf3049a787004eedf0be474a87
   libevent: 4049cae6c81cdb3654a443be001fb9bdceff7913

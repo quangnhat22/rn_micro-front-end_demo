@@ -1656,7 +1656,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@callstack/repack-dev-server@npm:^1.1.0":
+"@callstack/repack-dev-server@npm:^1.0.2":
   version: 1.1.0
   resolution: "@callstack/repack-dev-server@npm:1.1.0"
   dependencies:
@@ -1677,11 +1677,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@callstack/repack@npm:^3.7.0":
-  version: 3.7.0
-  resolution: "@callstack/repack@npm:3.7.0"
+"@callstack/repack@https://sourceapp.tgdd.vn/app/repack.git":
+  version: 3.6.0
+  resolution: "@callstack/repack@https://sourceapp.tgdd.vn/app/repack.git#commit=3d7d29b29573e1844bfe38dfcf18ed17d6d2bf17"
   dependencies:
-    "@callstack/repack-dev-server": ^1.1.0
+    "@callstack/repack-dev-server": ^1.0.2
     "@discoveryjs/json-ext": ^0.5.7
     "@pmmmwh/react-refresh-webpack-plugin": ^0.5.7
     colorette: ^1.2.2
@@ -1709,7 +1709,7 @@ __metadata:
     "@react-native-community/cli-types": "*"
     react-native: ">=0.63"
     webpack: 5.x
-  checksum: e5f59e64436f1b6cc13f666f33282b57619b2b3f8b131a90e9727ece41c6313bab6dd8469c40dc65cf80c0c570ecaea0d93e26d7c8457805d38227aab3e0eb93
+  checksum: ee82c7e34dce2339ce594e42691c5452145d687f8f8c9de9a5fd5434d54e50e07fc03e32d554ab25328319eec8c3cf54d2755afdb47ea3edb76a920628097da2
   languageName: node
   linkType: hard
 
@@ -3465,7 +3465,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.7.0
+    "@callstack/repack": "https://sourceapp.tgdd.vn/app/repack.git"
     "@react-native/eslint-config": ^0.72.2
     "@react-native/metro-config": ^0.72.9
     "@react-navigation/material-bottom-tabs": ^6.2.20
@@ -3501,7 +3501,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.7.0
+    "@callstack/repack": "https://sourceapp.tgdd.vn/app/repack.git"
     "@react-native/eslint-config": ^0.72.2
     "@react-native/metro-config": ^0.72.9
     "@react-navigation/material-bottom-tabs": ^6.2.20
@@ -3537,7 +3537,7 @@ __metadata:
     "@babel/core": ^7.20.0
     "@babel/preset-env": ^7.20.0
     "@babel/runtime": ^7.20.0
-    "@callstack/repack": ^3.7.0
+    "@callstack/repack": "https://sourceapp.tgdd.vn/app/repack.git"
     "@react-native/eslint-config": ^0.72.2
     "@react-native/metro-config": ^0.72.9
     "@react-navigation/native": ^6.1.6
