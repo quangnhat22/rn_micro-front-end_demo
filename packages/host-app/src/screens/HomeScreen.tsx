@@ -11,12 +11,12 @@ import {MaterialBottomTabScreenProps} from '@react-navigation/material-bottom-ta
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
 import {
   Avatar,
-  Card,
   Button,
+  Card,
   Divider,
+  Paragraph,
   Text,
   Title,
-  Paragraph,
 } from 'react-native-paper';
 import {TabsParamList} from '../navigation/TabsNavigator';
 import {HomeStackParamList} from '../navigation/HomeNavigator';
@@ -85,7 +85,7 @@ const HomeScreen = ({navigation}: Props) => {
         </Text>
         <Button
           mode="contained-tonal"
-          onPress={() => navigation.navigate('MiniApp')}>
+          onPress={() => navigation.navigate('BookingApp')}>
           MiniApp
         </Button>
       </View>
@@ -103,7 +103,7 @@ const HomeScreen = ({navigation}: Props) => {
         </Text>
         <Button
           mode="contained-tonal"
-          onPress={() => () => navigation.navigate('BookingApp')}>
+          onPress={() => navigation.navigate('Upcoming')}>
           BookingApp
         </Button>
       </View>
