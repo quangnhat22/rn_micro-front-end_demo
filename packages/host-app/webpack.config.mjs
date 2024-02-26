@@ -33,6 +33,9 @@ export default env => {
   } = env;
   const dirname = Repack.getDirname(import.meta.url);
 
+  console.log('dirname: ', dirname);
+  console.log('context: ', context);
+
   if (!platform) {
     throw new Error('Missing platform');
   }
@@ -231,6 +234,18 @@ export default env => {
           sourceMapFilename,
           assetsPath,
         },
+        extraChunks: [
+          {
+            include: /^.+\.local$/,
+            type: 'local',
+          },
+          {
+            // IMPORTANT!
+            exclude: /^.+\.local$/,
+            type: 'remote',
+            outputPath: path.join('build/output', platform, 'remote'), // Default path
+          },
+        ],
       }),
       new Repack.plugins.ModuleFederationPlugin({
         name: 'HostApp',

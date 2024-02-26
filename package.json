@@ -22,7 +22,9 @@
     "run:mini-app:ios": "yarn workspace MiniApp run ios",
     "run:mini-app:android": "yarn workspace MiniApp run android",
     "run:booking-app:ios": "yarn workspace BookingApp run ios",
-    "run:booking-app:android": "yarn workspace BookingApp run android"
+    "run:booking-app:android": "yarn workspace BookingApp run android",
+    "bundle:host-app:ios": "yarn workspace HostApp bundle:ios",
+    "bundle:host-app:android": "yarn workspace HostApp bundle:android"
   },
   "devDependencies": {
     "concurrently": "^7.6.0"
